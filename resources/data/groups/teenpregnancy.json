@@ -1,0 +1,14 @@
+{
+    "id": "teenpregnancy",
+    "name": "teenpregnancy aominee",
+    "cape": "textures/capes/teenpregnancy.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "e3ad12e0-3348-4715-8633-861b3857bd6c" //TeenPregnancy
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

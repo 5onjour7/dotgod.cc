@@ -1,0 +1,14 @@
+{
+    "id": "bullet",
+    "name": "bigman bullet",
+    "cape": "textures/capes/bullet.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "416e89fa-7233-4abe-ab01-52ab9d688280" //dabigbulletz638
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

@@ -1,0 +1,15 @@
+{
+    "id": "mario",
+    "name": "marlboros mario",
+    "cape": "textures/capes/mario.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "c8776736-5233-45f7-8b6d-c81a5b581c71", //_Handcrafted_
+      "acd4efb6-819d-41bd-a7d3-67a28f2cd1a4" //Mariobamaboy
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

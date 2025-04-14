@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "groups": [
+    //applied top-to-bottom, so people in multiple groups will only end up in the lowermost one they appear in
+    "data/groups/eliteplayers.json",
+    "data/groups/dotfive.json",
+    "data/groups/aominee.json",
+    "data/groups/mario.json",
+    "data/groups/rusherfag.json",
+    "data/groups/bullet.json",
+    "data/groups/teenpregnancy.json",
+    "data/groups/ilikespotify.json",
+    "data/groups/blank.json",
+    "data/groups/hollow.json",
+    "data/groups/chard.json"
+  ]
+}

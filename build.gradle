@@ -1,0 +1,125 @@
+import java.util.stream.StreamSupport
+
+buildscript {
+    repositories {
+        maven {
+            name = 'SpongePowered'
+            url = 'https://repo.spongepowered.org/maven'
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
+        classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.0'
+    }
+}
+
+apply plugin: "net.minecraftforge.gradle.forge"
+apply plugin: 'org.spongepowered.mixin'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+group = "me.eclipcen"
+archivesBaseName = "tzuyu"
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
+
+configurations.all {
+    resolutionStrategy {
+        force("com.google.guava:guava:21.0")
+    }
+}
+
+minecraft {
+    version = "1.12.2-14.23.5.2836"
+    runDir = "run"
+    mappings = "stable_39"
+    makeObfSourceJar = false
+
+    def args = [
+            "-Dmixin.checks.interfaces=true",
+            "-Dmixin.debug.export=true",
+            "-Dmixin.debug.verbose=true",
+            "-Dmixin.hotSwap=true",
+            "-Xmx2G",
+            "-XX:+UseG1GC",
+            "-ea",
+            "-da:io.netty..."
+    ]
+    clientJvmArgs += args
+    serverJvmArgs += args
+}
+
+version = "searge"
+
+configurations {
+    relocate
+    shade
+    shade.extendsFrom relocate
+    compile.extendsFrom shade
+}
+
+repositories {
+    maven {
+        name = 'spongepowered-repo'
+        url = 'https://repo.spongepowered.org/maven/'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    if ("true".equalsIgnoreCase(System.getProperty("idea.sync.active"))) {
+        //intellij is present - we don't want it to register mixin as an annotation processor, so we just add it as a standard dependency.
+        compile "org.spongepowered:mixin:0.8"
+    } else {
+        //register mixin as a standard annotation processor
+        shade("org.spongepowered:mixin:0.8") {
+            transitive = false
+        }
+
+        annotationProcessor "org.spongepowered:mixin:0.8:processor"
+    }
+}
+
+mixin {
+    defaultObfuscationEnv notch
+    add sourceSets.main, "mixins.butterflyclient.refmap.json"
+}
+
+shadowJar {
+    classifier = null
+    configurations = [project.configurations.shade]
+}
+build.dependsOn shadowJar
+
+reobf {
+    shadowJar {
+        mappingType = 'SEARGE'
+        classpath = sourceSets.main.compileClasspath
+    }
+}
+
+jar {
+    manifest {
+        attributes(
+                'Manifest-Version': '1.0',
+                'TweakOrder': '0',
+                'MixinConfigs': 'mixins.butterflyclient.json',
+                'tweakClass': 'me.eclipcen.butterflyclient.launch.Tweaker'
+        )
+    }
+}
+
+task preIntellijRuns {
+    doFirst {
+        StreamSupport.stream(configurations.compile.spliterator(), false).filter({
+            java.nio.file.Paths.get(it.absolutePath).getFileName().toString().matches("mixin-\\d+(\\.\\d+)*\\.jar")
+        }).findAny().ifPresent({
+            minecraft.clientJvmArgs += "-javaagent:" + it.absolutePath
+            minecraft.serverJvmArgs += "-javaagent:" + it.absolutePath
+        })
+    }
+}
+genIntellijRuns.dependsOn(preIntellijRuns)

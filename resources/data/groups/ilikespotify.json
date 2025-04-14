@@ -1,0 +1,14 @@
+{
+    "id": "ilikespotify",
+    "name": "ilikespotify aominee",
+    "cape": "textures/capes/ilikespotify.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "cad322df-5460-4f61-a374-58ac24b8426c" // IlikeSpotify
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

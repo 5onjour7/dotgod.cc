@@ -1,0 +1,52 @@
+{
+    "id": "eliteplayers",
+    "name": "elite_tier.pl members",
+    "cape": "textures/capes/butterfly.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "ebefd962-3612-435d-a35b-26e8fcb975d9", //phlow
+      "b5135ba4-732f-4a6e-a775-3c09954092f7", //Eclipcen
+      "3221adb6-61c2-4a09-9cbb-04cb85d5004e", //TRENDSETZER
+      "48cbb0b6-664c-4966-b7c8-ca4d933e9173", //CRYSTALLEGENDE
+      "35e3468a-a768-4eee-a6bd-57987dcf5b25", //Griphith
+      "912a9646-af27-446b-8504-c4b9a9e9df12", //KEKN1GGER
+      "709db6de-c557-4468-9990-01da6cc7b5ee", //PVPTRENDSETTER
+      "0bdce7a8-167a-4590-a30d-69e1cb0afd9a", //PHARAOHF
+      "89c5879a-2524-4b48-99ba-9ff7f46c9152", //lolost1861
+      "135e6768-a168-4713-8fe5-b469e8b42832", //Marioboogieboy
+      "73c4677d-e366-4470-803e-066964fcccd1", //BiggestSket
+      "ff5b6989-baee-473e-8dda-09a9a423d7b9", //ShoutOutToMyEx
+      "4cdbee37-40bd-49df-bf61-0ed7438c7eca", //eenimoa
+      "bb908096-f298-4cac-a0d8-2626283b62e0", //NaughtyList
+      "f0f01e15-9b93-4279-9ba4-e0e3755b4d39", //GameBenny
+      "70951efd-2762-4851-a4dc-a9943ac3c76d", //pepsimod
+      "2c63b36e-c1a2-4901-9d71-7790ab9efaf6", //OldManDot5
+      "a67e70e8-7ea5-4fd8-9070-1cf5201e65eb", //freeyearslater
+      "ac7e98d4-0022-485e-96fb-dce614f00117", //Sexinq
+      "481e8a9d-4969-4426-b301-168e1391829e", //SpawnFag
+      "df51944b-0934-497e-90d8-b5b7192c3458", //MTmerm
+      "9c12049b-d765-48c2-bafb-b9a56e4daa43", //T12AFG4SGF411DA2
+      "a3c2e232-cbf0-4e71-9c83-bac4bccbb1ae", //TaxEvasion_
+      "7a82709e-90b1-46ee-84d8-306d27086298", //kdke
+      "061c803a-2e9b-4e4c-b81a-8029199d26e4", //CallMeRosa
+      "42e233d9-d62a-449c-9e39-a45e36684f1f", //Lenimaru
+      "0e558628-22c5-47cf-9ea6-86e7491ef2f5", //ProbablyGay
+      "86ca3527-1913-45b7-af21-562c0eec916d", //TaiwaneseFag
+      "fefd4c6d-03c9-4d15-b3f4-9470399908be", //PolishedPenny
+      "e9e5730b-27b9-4596-bcfb-9a764ed8ea1f", //itzzprab
+      "2dd4fe3f-04d1-4191-ad62-a77d3d801685", //TheEmperium
+      "9ca9aa0f-ddc5-4e38-8730-a37c5d89df6e", //AutoCrystal
+      "51c83e39-0b56-45ab-96f0-75477a0b19ba", //SaudiG
+      "ab91f509-01d2-45c1-a6c6-3d3736de7add", //TheNaughtyList
+      "a63d2757-0129-49bf-a793-aaae76247be4", //N1GGERJEWSL1TTER
+      "cea2fa84-1a1b-4f0b-a5a8-cc7484bac424", //PVPMANIAC
+      "29cb3a83-4849-40f1-a532-20d00e6ac84a", // bhope
+      "cae09095-6a2b-4692-8401-12abdacd7df2", // Bulhar
+      "50937991-9ac7-4005-b627-c2a31b7b1653" // GloriousModelO
+    ],
+    "color": { //0x00ff00, or green
+      "r": 255,
+      "g": 20,
+      "b": 255
+    }
+  }

@@ -1,0 +1,14 @@
+{
+    "id": "dotfive",
+    "name": "legende dotfive",
+    "cape": "textures/capes/dotfive.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "1e6309fb-c65d-4fe4-bf69-9ee216f371d3" //Dot5
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

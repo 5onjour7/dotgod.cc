@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "baseurl": "https://dabigbulletz638.github.io/resources/",
+  "data": {
+    "groups": "data/groups.json",
+    "mainmenu": "data/mainmenu.json"
+  }
+}

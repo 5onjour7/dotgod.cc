@@ -1,0 +1,13 @@
+{
+    "id": "logo",
+    "name": "logo",
+    "cape": "textures/capes/butterfly.png",
+    "icon": "textures/butterfly_icon_16x16.png",
+    "members": [
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

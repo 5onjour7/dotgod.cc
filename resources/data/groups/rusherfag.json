@@ -1,0 +1,14 @@
+{
+    "id": "rusherfag",
+    "name": "leaky leaky rusherfag",
+    "cape": "textures/capes/rusherfag.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "07556c78-4988-491c-828c-670f4190babd" //RusherFag
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

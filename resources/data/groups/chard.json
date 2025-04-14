@@ -1,0 +1,14 @@
+{
+    "id": "chard",
+    "name": "c chard",
+    "cape": "textures/capes/chard.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "c1092cbe-b671-471e-b0a6-12da20d55135" // 1money
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

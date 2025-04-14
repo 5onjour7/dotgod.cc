@@ -1,0 +1,14 @@
+{
+    "id": "aominee",
+    "name": "anime aominee",
+    "cape": "textures/capes/aominee.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "935b0d97-3ecf-415a-9ee0-4bde2c48b90b" //aominee
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

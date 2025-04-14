@@ -1,0 +1,14 @@
+{
+    "id": "hollow",
+    "name": "hollow ollow",
+    "cape": "textures/capes/hollow.png",
+    "icon": "textures/butterfly.png",
+    "members": [
+      "cc72ff00-a113-48f4-be18-2dda8db52355" // rushhydandxz
+    ],
+    "color": { //0xff5555, or formatting code \u00A7c
+      "r": 255,
+      "g": 0,
+      "b": 255
+    }
+  }

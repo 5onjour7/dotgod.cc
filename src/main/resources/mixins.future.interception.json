@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.7.11",
+  "package": "net.futureclient.interception.loader.mixin",
+  "refmap": "mixins.butterflyclient.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "verbose": false,
+  "mixins": [
+    "MixinC00Handshake",
+    "MixinNetHandlerLoginClient",
+    "MixinNetworkManager"
+  ]
+}
